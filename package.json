@@ -1,0 +1,19 @@
+{
+  "name": "to_do_list",
+  "version": "1.0.0",
+  "description": "my first to do list web app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "todolist"
+  ],
+  "author": "shubham",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}
