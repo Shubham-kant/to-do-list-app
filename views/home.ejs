@@ -1,8 +1,73 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
         <link rel="stylesheet" href="/css/home.css">
     </head>
     <body>
+        <div id="heading">
         <h1>TODO app<h1>
+        </div>
+        <hr>
+        <div id="description" class="margin10">
+            
+            <form  action="" id="form-des">
+                <div id="d1">
+                   <lablel for="des1" style="color: slategray">DESCRIPTION</lablel>
+                </div>
+                <div id="d2">
+                   <input type="text" name="name" id="des1" placeholder="what do you need to do?">
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div id="category" class="margin10">
+            <div>
+            <div id="c1">CATEGORY</div>
+            <div>
+            <select name="category" id="sel-tag">
+                <option >Choose a Category</option>
+                <option value="personal">Personal</option>
+                <option value="work" >Work</option>
+                <option value="school">School</option>
+                <option valure="cleaning">Cleaning</option>
+                <option value="other">Other</option>
+            </select>
+            </div>
+        </div>
+    
+    
+            <div class="divider"></div>
+            
+            <div id="pick-up-date">
+                <div id="due-date">
+                    <span>DUE DATE</span>
+                </div>
+                <input type="date" id="myDate" value="2019-01-01" >
+                
+                       
+                    
+            </div>    
+        </div>
+        <hr>
+        <div class="margin32" id="btn">
+            <div id="btn1">
+            <button id="add-btn">
+                    <i class="fas fa-plus"></i>
+                    <span >ADD TASK</span>
+            </button>
+            </div>
+
+            <div id="btn2">
+            <button id="del-btn">
+                    <i class="far fa-trash-alt"></i>
+                     <span>DELETE TASK</span>
+
+            </button>
+        </div>
+        </div>
+        <hr>
+       
+        <script type="text/javascript" src="/js/home.js"></script>
     </body>
 </html>

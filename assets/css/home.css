@@ -1,4 +1,108 @@
 body{
     margin:0;
-    text-align: center;
+    
 }
+#heading{
+    text-align: center;
+    color: grey;
+    font-family: sans-serif;
+    margin-top: 15px;
+
+}
+.margin10{
+    margin-left: 10rem;
+}
+.margin32{
+    margin-left: 32.5vw;
+}
+#description{
+    height: 3rem;
+}
+
+
+#description input{
+    outline:none;
+    border: none;
+    font-size: 0.8rem;
+    color: darkgray;
+    width:30vw;
+}
+#d1{
+    margin-bottom: 0.3rem;
+}
+#category{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+#c1{
+    color: slategray;
+    margin-bottom: 0.3rem;
+}
+#sel-tag{
+    color: slategray;
+    outline: none;
+    border: none;
+    width: 12rem;
+    font-size: 0.8rem;
+    /* line-height: 3rem; */
+
+}
+.divider{
+    height: 4rem;
+    width: 0;
+    position: absolute;
+    left:50%;
+    top: 32%;
+    border: 1px solid lightgrey;
+}
+#pick-up-date{
+    width: 55%;
+}
+#due-date{
+    color: slategray;
+    margin-bottom: 0.3rem;
+    margin-bottom: 0.3rem;
+
+}
+#pick-up-date input{
+    color:slategray;
+    border: none;
+    outline:none;
+}
+#btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#btn button{
+    color:white;
+    height: 8vh;
+    border:none;
+    outline: none;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    width: 12vw;
+    
+    
+
+}
+#add-btn  span{
+    font-family: sans-serif;
+}
+#add-btn{
+    background-color: blueviolet;
+    cursor: pointer;
+    /* width: 50%; */
+}
+#del-btn{
+    background-color: red;
+    cursor: pointer;
+}
+
+#btn2{
+    width: 65%;
+
+} 

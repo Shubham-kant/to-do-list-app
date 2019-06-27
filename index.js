@@ -2,6 +2,8 @@ const express=require('express');
 const port=8000;
 const app=express();
 const db=require('./config/mongoose');
+const Task=require('./models/home');
+var $=require('jquery');
 
 app.use(express.static('assets'));
 
