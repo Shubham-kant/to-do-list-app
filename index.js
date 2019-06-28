@@ -2,14 +2,17 @@ const express=require('express');
 const port=8000;
 const app=express();
 const db=require('./config/mongoose');
-const Task=require('./models/home');
+// const Task=require('./models/home');
 var $=require('jquery');
-
+app.use(express.urlencoded());
 app.use(express.static('assets'));
 
 app.use('/',require('./routes'));
 app.set('view engine','ejs');
 app.set('views','./views');
+
+
+
 
 app.listen(port,function(err){
     if(err){
