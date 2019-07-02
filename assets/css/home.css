@@ -16,6 +16,10 @@ body{
 .margin32{
     margin-left: 32.5vw;
 }
+.margin7{
+    margin-left:7rem;
+    margin-right: 7rem;
+}
 #description{
     height: 3rem;
 }
@@ -46,6 +50,8 @@ body{
     border: none;
     width: 12rem;
     font-size: 0.8rem;
+    /* text-align: center; */
+   
     /* line-height: 3rem; */
 
 }
@@ -87,7 +93,6 @@ body{
     font-family: sans-serif;
     width: 12vw;
     
-    
 
 }
 #add-btn  span{
@@ -113,12 +118,14 @@ body{
 }
 #name-word{
     color: slategray;
+    font-size: 1rem;
 }
     
 
 
 #category-word{
     margin-right: 10vw;
+    font-size: 0.8rem;
 }
 #category-word div{
     background-color: blueviolet;
@@ -126,6 +133,8 @@ body{
     width:   6rem;;
     color: beige;
     border-radius: 0.2rem;
+    position: relative;
+    top: 60%;
     
     padding: 0.1rem;
   
@@ -144,8 +153,25 @@ li{
 #date-calender{
     display: flex;
     justify-content: space-between;
+    
 }
 #deadline{
-    margin-right: 70vw;
+    margin-right: 68vw;
     color: slategray;
+    font-size: 0.66rem;
+    
+    /* width: 2rem; */
+}
+.task-space{
+    background-color: lightgrey;
+    width: 80%;
+}
+#task-info{
+    margin-left: 1rem;
+}
+#task-info input{
+    position: relative;
+    right: 1rem;
+    bottom: 2.75rem;
+
 }

@@ -25,8 +25,8 @@ module.exports.home1=function(req,res){
     
 };
 module.exports.delete_task=function(req,res){
-    let  id=req.query.id;
-    console.log('*****',req.query);
+    let  id=req.body.id;
+    console.log('*****',id);
     Task.findByIdAndDelete(id,function(err){
         if(err){
             console.log('error in deleting a contact');

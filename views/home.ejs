@@ -27,7 +27,7 @@
             <div>
             
             <select name="category" id="sel-tag"   required>
-                <option >Choose a Category</option>
+                <option  value="">Choose a Category</option>
                 <option value="Personal">Personal</option>
                 <option value="Work" >Work</option>
                 <option value="School">School</option>
@@ -76,19 +76,19 @@
     
         </div>
         <hr>
+        <form action="/delete-task" id="form-des" method="POST">
         <ul >
-            <% for(let i of task_list) { %>
+               
+            <% for(var i of task_list) { %>
 
-                <li class="margin10">
-                    <form action="/delete-task/?id=<%= i._id %>" id="form-des" method="POST">
+                <li class="margin7 task-space">
+                    
                        
-                    <label for="id1">
+                    <label for="id1" form="form-des">
+                        <div id="task-info">
                         <div id="name-category" >
                             
                            <div id="name-word"><%= i.name %></div>
-                             
-                            
-                           
                            <div id="category-word">
                                <div>
                                    <span>
@@ -108,7 +108,9 @@
                         </div>
                         </div>
                     </label>
-                    <input type="checkbox"  id="id1"> 
+                    
+                    <input type="checkbox"  id="id1" name="id" value="<%= i._id %>" form="form-des"> 
+                </div>
                     <hr >
                 </li>
             <% } %>
