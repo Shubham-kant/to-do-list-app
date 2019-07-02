@@ -9,6 +9,7 @@ body{
     margin-top: 15px;
 
 }
+
 .margin10{
     margin-left: 10rem;
 }
@@ -106,3 +107,45 @@ body{
     width: 65%;
 
 } 
+#name-category{
+    display: flex;
+    justify-content: space-between;
+}
+#name-word{
+    color: slategray;
+}
+    
+
+
+#category-word{
+    margin-right: 10vw;
+}
+#category-word div{
+    background-color: blueviolet;
+    height: 35px;
+    width:   6rem;;
+    color: beige;
+    border-radius: 0.2rem;
+    
+    padding: 0.1rem;
+  
+
+}
+#category-word div span{
+    margin: auto;
+ /*  */
+    position: relative;
+    left:14%;
+    top: 6%;
+}
+li{
+    list-style: none;
+}
+#date-calender{
+    display: flex;
+    justify-content: space-between;
+}
+#deadline{
+    margin-right: 70vw;
+    color: slategray;
+}

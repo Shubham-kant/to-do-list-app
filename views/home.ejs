@@ -28,11 +28,11 @@
             
             <select name="category" id="sel-tag"   required>
                 <option >Choose a Category</option>
-                <option value="personal">Personal</option>
-                <option value="work" >Work</option>
-                <option value="school">School</option>
-                <option value="cleaning">Cleaning</option>
-                <option value="other">Other</option>
+                <option value="Personal">Personal</option>
+                <option value="Work" >Work</option>
+                <option value="School">School</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Other">Other</option>
             </select>
         
             </div>
@@ -76,20 +76,40 @@
     
         </div>
         <hr>
-        <ul>
+        <ul >
             <% for(let i of task_list) { %>
 
-                <li>
+                <li class="margin10">
                     <form action="/delete-task/?id=<%= i._id %>" id="form-des" method="POST">
                        
                     <label for="id1">
+                        <div id="name-category" >
+                            
+                           <div id="name-word"><%= i.name %></div>
+                             
+                            
+                           
+                           <div id="category-word">
+                               <div>
+                                   <span>
+                                   <%= i.category %>
+                                   </span>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div id="date-calender">
+                            <div id="calender-pic">
+                        <i class="far fa-calendar-alt"></i>
+                        </div>
                         
-                           <p><%= i.name %></p> 
-                           <p><%= i.category %></p>
-                        
-                    <p><%= i.date %></p>
+                        <div id="deadline">
+                            <%= i.date %>
+                        </div>
+                        </div>
                     </label>
                     <input type="checkbox"  id="id1"> 
+                    <hr >
                 </li>
             <% } %>
         </ul>

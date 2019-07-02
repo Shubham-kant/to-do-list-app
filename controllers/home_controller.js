@@ -32,7 +32,8 @@ module.exports.delete_task=function(req,res){
             console.log('error in deleting a contact');
             return;
         }
-return res.redirect('back');
+        return res.redirect('back');
     });
+    
 
 };
