@@ -6,7 +6,11 @@ body{
     text-align: center;
     color: grey;
     font-family: sans-serif;
-    margin-top: 15px;
+    margin-top: 20px;
+    height:5rem;
+    width:80vw;
+    /* background-color:#fc7303; */
+    margin:auto;
 
 }
 
