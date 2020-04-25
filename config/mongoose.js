@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb://localhost/todolist_development');
+mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost/todolist_development');
 
 const db=mongoose.connection;
 db.on('error',console.error.bind(console,'error in connecting to Mongodb'));
