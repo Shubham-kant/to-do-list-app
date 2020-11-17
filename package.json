@@ -17,7 +17,7 @@
     "env": "0.0.2",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
-    "mongoose": "^5.6.1",
+    "mongoose": "^5.7.5",
     "nodemon": "^2.0.6"
   },
   "engines": {
